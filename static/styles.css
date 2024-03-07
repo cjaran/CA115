@@ -1,0 +1,23 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+    justify-content: center;
+    justify-items: center;
+}
+.navbar a {
+    justify-self: auto;
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
