@@ -80,46 +80,88 @@
           </div>
       </div>
   </section>
-  
-
-    <section id="testimonials">
-        <h2>What Our Customers Say</h2>
+<section id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-carousel">
         <div class="testimonial">
-            <!-- Customer Testimonials Here -->
             <blockquote>
-                <p>"The smartwatch helped me improve my sleep quality significantly."</p>
+                <p>"The DigiCare health monitoring features gave me peace of mind<br> and allowed me to track my health effortlessly."</p>
+                <cite>- Alex Johnson</cite>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p>"The DigiCare heart rate monitor feature provided valuable insights <br>into my cardiovascular health and helped me make better lifestyle choices."</p>
+                <cite>- Michael Brown</cite>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p>"The DigiCare body temperature tracking feature has been incredibly useful, <br>especially during these times. It helps me keep track of any fluctuations and provides early indications of potential illness."</p>
+                <cite>- Jessica Lee</cite>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p>"DigiCare helped me improve my sleep quality significantly."</p>
                 <cite>- John Doe</cite>
             </blockquote>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="about">
-        <h2>Our Mission</h2>
-        <!-- Company Background and Team Members Here -->
-        <p>Our mission is to empower individuals to take control of their health...</p>
-    </section>
+<section id="about">
+    <h2>Our Mission</h2>
+    <!-- Company Background and Team Members Here -->
+    <p>Our mission is to empower individuals to take control of their health...</p>
+</section>
 
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <!-- Contact Form and Information Here -->
-        <form action="#" method="POST">
-            <!-- Contact Form Fields Here -->
-        </form>
-        <p>Contact us at: example@example.com</p>
-    </section>
+<section id="contact">
+    <h2>Get in Touch</h2>
+    <form
+        action="https://formspree.io/f/mzbnaknd"
+        method="POST"
+    >
+    <label>Your email:<input type="email" name="email"></label>
+    <label>Your message:<textarea name="message"></textarea></label>
+    <button type="submit">Send</button>
+    </form>
+    <p>Or Contact us at: <a href="mailto:CA115@ciaranjohnson.eu">CA115@ciaranjohnson.eu</a></p>
+</section>
 
-    <footer>
-        <div class="social-media">
-            <!-- Social Media Links Here -->
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-        </div>
-        <p>&copy; 2024 DigiCare. CA115 Group 40.</p>
-        <ul class="footer-links">
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
-    </footer>
+<footer>
+    <div class="social-media">
+        <a href="#"><img src="./resources/facebook-logo.png" alt="Facebook"></a>
+        <a href="#"><img src="./resources/twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="./resources/instagram-logo.png" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2024 DigiCare. CA115 Group 40.</p>
+    <ul class="footer-links">
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+    </ul>
+</footer>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var carousel = $('.testimonial-carousel');
+        var testimonials = carousel.children('.testimonial');
+        var totalTestimonials = testimonials.length;
+        var currentIndex = 0;
+        var interval = 5000;
+
+        function showNextTestimonial() {
+            testimonials.eq(currentIndex).fadeOut('slow');
+            console.log('Scrolling')
+            currentIndex = (currentIndex + 1) % totalTestimonials;
+            testimonials.eq(currentIndex).fadeIn('slow');
+        }
+
+        setInterval(showNextTestimonial, interval);
+    });
+</script>
+
+
 </html>

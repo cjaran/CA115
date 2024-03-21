@@ -179,22 +179,120 @@ nav ul li a:hover {
 #testimonials h2 {
   text-align: center;
   font-size: 30px;
-}
-
-
-.testimonial {
-  text-align: center;
+  color: #333;
   margin-bottom: 30px;
 }
 
+.testimonial-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.testimonial {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
 blockquote {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0;
+  width: 80%;
+}
+
+blockquote p {
+  margin-bottom: 10px;
+}
+
+cite {
+  display: block;
   font-style: italic;
+  margin-top: 10px;
+}
+
+#contact {
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact textarea {
+  height: 150px;
+}
+
+#contact button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: #555;
+}
+
+#contact p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+#contact p a {
+  text-decoration: none;
 }
 
 footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
