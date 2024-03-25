@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon-16x16.png">
+    <link rel="manifest" href="./resources/site.webmanifest">
+    <link rel="mask-icon" href="./resources/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>DigiCare</title>
+    <link rel="stylesheet" href="./static/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./resources/digicare-logo.png" alt="DigiCare Logo">
+            <ul>
+                <li><a href="./index.html#features">Features</a></li>
+                <li><a href="./index.html#how-it-works">How it Works</a></li>
+                <li><a href="./index.html#testimonials">Testimonials</a></li>
+                <li><a href="./about.html#about">About</a></li>
+                <li><a href="./contact-us.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="video-wrapper">
+            <video playsinline autoplay muted loop id="bg_video" class="video">
+            <source src="./resources/purchase-bg-video.mp4" type="video/mp4">
+            </video>
+            <div class="video-content">
+            <h2>Its more than just a smart watch.</h2>
+            <div class="pricing-table">
+                <div class="pricing-column">
+                  <div class="pricing-header">
+                    <h2>DigiCare Watch</h2>
+                    <p class="price">€70</p>
+                    <p class="subscription">One-time payment</p>
+                  </div>
+                  <div class="pricing-features">
+                    <ul>
+                      <li>High-quality device</li>
+                      <li>One-time purchase</li>
+                      <li>Free updates</li>
+                    </ul>
+                  </div>
+                  <div class="pricing-footer">
+                    <button class="subscribe-btn">Purchase Now</button>
+                  </div>
+                </div>
+                
+                <div class="pricing-column">
+                  <div class="pricing-header">
+                    <h2>DigiCare+ Subscription</h2>
+                    <p class="price">€10/month</p>
+                    <p class="subscription">Billed monthly</p>
+                  </div>
+                  <div class="pricing-features">
+                    <ul>
+                      <li>Access to all features</li>
+                      <li>Cancel anytime</li>
+                      <li>24/7 support</li>
+                    </ul>
+                  </div>
+                  <div class="pricing-footer">
+                    <button class="subscribe-btn">Subscribe Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </header>
+        <div class="payment">
+        <section class="checkout-form">
+            <h2>Checkout</h2>
+            <h3>Your card will be charged at €80 and €10 a month from todays date.</h3>
+            <h3>This is a mock page and does not handle any card details.</h3>
+            <form action="#" method="post">
+                <label for="card_number">Card Number:</label>
+                <input type="text" id="card_number" name="card_number" placeholder="Enter card number" required>
+                
+                <label for="expiry_date">Expiry Date:</label>
+                <input type="date" id="expiry_date" name="expiry_date" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="number" id="cvv" name="cvv" placeholder="Enter CVV" required>
+                
+                <label for="card_holder_name">Card Holder Name:</label>
+                <input type="text" id="card_holder_name" name="card_holder_name" placeholder="Enter card holder name" required>
+                
+                <input type="submit" value="Submit Payment">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="./resources/facebook-logo.png" alt="Facebook"></a>
+            <a href="#"><img src="./resources/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="./resources/instagram-logo.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 DigiCare. CA115 Group 40.</p>
+        <ul class="footer-links">
+            <li><a href="./tos.html">Terms of Service</a></li>
+            <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
