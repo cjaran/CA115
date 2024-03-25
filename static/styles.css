@@ -203,7 +203,7 @@ blockquote {
   border-radius: 5px;
   padding: 20px;
   margin: 0;
-  width: 80%;
+  width: 60%;
 }
 
 blockquote p {
@@ -305,8 +305,77 @@ footer ul {
   margin: 0 10px;
 }
 
+
+.about {
+  padding: 50px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.mission {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission p {
+  flex: 0 1 calc(33% - 20px);
+  padding: 20px;
+  background-color: #fff; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+
+
+.team {
+  margin-top: 50px;
+}
+
+.team ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+}
+
+.team li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+
+.team li img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team li p {
+  font-size: 16px;
+  color: #555;
+}
+
+
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
+  .mission {
+    flex-wrap: wrap;
+  }
+
+  .mission p {
+    flex: 0 1 calc(50% - 20px);
+    margin-bottom: 20px; 
+  }
+
   .hero h1 {
     font-size: 28px;
   }
@@ -327,5 +396,58 @@ footer ul {
 
   .feature-card {
     flex: 0 1 calc(100% - 40px);
+  }
+
+  nav {
+    padding: 0px 0;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  nav ul {
+    text-align: center;
+    display: none; /* Hide the unordered list by default */
+    position: absolute;
+    top: 100%; /* Position the dropdown below the navbar */
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #333; /* Background color for dropdown */
+  }
+
+  nav ul.active {
+    display: block; /* Show the dropdown when active */
+  }
+
+  nav ul li {
+    display: block; /* Display list items as block */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  nav .nav-right {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block; /* Display links as block */
+    padding: 10px 0; /* Adjust padding */
+    border-bottom: 1px solid #555; /* Add a bottom border for separation */
+  }
+
+  nav ul li:last-child a {
+    border-bottom: none; 
+  }
+
+  blockquote {
+    display: flex;
+    text-overflow:inherit;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+    width: 60%;
   }
 }
